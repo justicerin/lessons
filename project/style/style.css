@@ -9,16 +9,51 @@ h1
     text-align: center;
 }
 
-a
+div
 {
-    background-color: aqua;
-    display: block;
 
 }
 
-a:hover
+.logotip
+{
+    text-align: center;
+    margin: 10px 0px;
+
+}
+
+.header
+{
+    padding-top: 40px;
+}
+
+#leftmenu
+{
+
+}
+
+#leftmenu ul
+{
+    list-style-type: none;
+}
+
+#leftmenu a
+{
+    background-color: aqua;
+    display: block;
+    padding: 10px;
+}
+
+#leftmenu a:hover
 {
     background-color: darkblue;
     color: white;
+}
+
+#leftmenu li a
+{
+    margin: 5px;
+    border-radius: 10px;
+    font-style: italic;
+    text-decoration: none;
 }
 
