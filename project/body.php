@@ -1,3 +1,4 @@
+<?php require_once "function.php"?>
 <body>
 
 
@@ -17,6 +18,4 @@
         <?php require_once "menu.php"; ?>
     </div>
     <div class="col-md-10">
-        контент
-    </div>
-</div>
+

@@ -1,3 +1,8 @@
+<?php
+require_once "header.php";
+require_once "body.php";
+?>
+
 <form method="post">
     Ваше имя <input type="text" name="name"><br><br>
     Ваша фамилия <input type="text" name="surname"><br>
@@ -17,3 +22,5 @@ else
 {
     echo "Мы вас не знаем";
 }
+
+require_once "footer.php";

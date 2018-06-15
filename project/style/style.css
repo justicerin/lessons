@@ -1,11 +1,13 @@
 body
 {
     background-color: azure;
+    background: url("../img/background.png");
+    width: 98%;
 }
 
 h1
 {
-    color: red;
+    color: #B01C2E;
     text-align: center;
 }
 
@@ -34,19 +36,26 @@ div
 #leftmenu ul
 {
     list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
 #leftmenu a
 {
     background-color: aqua;
+    background: url("../img/menua.png");
     display: block;
     padding: 10px;
+    color: #B01C2E;
 }
 
 #leftmenu a:hover
 {
     background-color: darkblue;
     color: white;
+    background: url("../img/menuahover.png");
+    transition-duration: 1s;
+    margin-left: 30px;
 }
 
 #leftmenu li a
@@ -55,5 +64,13 @@ div
     border-radius: 10px;
     font-style: italic;
     text-decoration: none;
+}
+
+.footer
+{
+    background: url("../img/menuahover.png");
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
