@@ -1,4 +1,4 @@
-<?php require_once "function.php"?>
+<?php require_once "lib/function.php" ?>
 <body>
 
 
