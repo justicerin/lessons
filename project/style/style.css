@@ -74,3 +74,19 @@ div
     text-align: center;
 }
 
+#pifagor
+{
+    margin-top: 20px;
+}
+
+#pifagor table
+{
+ background-color: white;
+}
+
+#pifagor_form
+{
+    margin-top: 10px;
+    width: 25%;
+}
+

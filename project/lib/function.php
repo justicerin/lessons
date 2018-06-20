@@ -21,17 +21,47 @@ function kosti ()
 }
 
 // Таблица Пифагора
-function pifagor()
+function pifagor($tr,$td)
 {
-echo "<table>";
+echo "<table class=\"table-striped table-bordered table-hover table-sm table-responsive\">";
 
-    for($i=1;$i<=9;$i++)
+    for($i=1;$i<=$tr;$i++)
     {
-        echo "<tr>";
 
-        echo "</tr>";
+        if($i==1)
+        {
+            echo "<thead>";
+            echo "<tr>";
+            for($k=1; $k<=$td; $k++)
+            {
+                echo "<th scope=\"col\">{$k} </th>";
+            }
+            echo "</tr>";
+            echo "</thead>";
+
+        }
+        else
+        {
+            echo "<tbody>";
+            echo "<tr>";
+            for($k=1; $k<=$td; $k++)
+            {
+                if($k==1)
+                {
+                    echo "<th scope=\"row\">".$k*$i."</th>";
+                }
+                else
+                {
+                    echo "<td>".$k*$i."</td>";
+                }
+
+            }
+            echo "</tr>";
+
+        }
+
     }
 
-
+    echo "</tbody>";
 echo "</table>";
 }
