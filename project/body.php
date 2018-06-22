@@ -9,6 +9,7 @@
     </div>
     <div class="col-md-10 header">
         <h1>Название сайта</h1>
+        <?php today();?>
     </div>
 </div>
 

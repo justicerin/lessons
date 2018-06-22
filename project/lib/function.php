@@ -65,3 +65,30 @@ echo "<table class=\"table-striped table-bordered table-hover table-sm table-res
     echo "</tbody>";
 echo "</table>";
 }
+
+// Сегодня
+function today ()
+{
+    $day["Sunday"] = "воскресенье";
+    $day["Monday"] = "понедельник";
+    $day["Tuesday"] ="вторник";
+    $day["Wednesday"] ="среда";
+    $day["Thursday"] = "четверг";
+    $day["Friday"] = "пятница";
+    $day["Saturday"] = "суббота";
+
+    $month["January"] ="января";
+    $month["February"] = "февраля";
+    $month["March"] = "марта";
+    $month["April"] = "апреля";
+    $month["May"] = "мая";
+    $month["June"] = "июня";
+    $month["July"] = "июля";
+    $month["August"] = "августа";
+    $month["Septeber"] = "сентября";
+    $month["October"] = "октября";
+    $month["November"] = "ноября";
+    $month["December"] = "декабря";
+
+    echo "Сегодня ".$day[date(l)].", ".date(d)." ".$month[date(F)]." ".date(Y)." года" ;
+}
