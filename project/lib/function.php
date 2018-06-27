@@ -1,6 +1,20 @@
 <?php
 // библиотека функций
 
+// подключение к БД
+function dbConnect($sql)
+{
+    $connection = mysqli_connect("localhost","justicerin",12345,"justicerin");
+
+    if ($sql)
+    {
+        $result = mysqli_query($connection,$sql);
+        return $result;
+    }
+
+
+}
+
 // вычисление суммы двух чисел
 function summa ($a,$b)
 {
