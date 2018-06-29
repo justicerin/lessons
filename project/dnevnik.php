@@ -1,23 +1,45 @@
 <?php
 require_once "header.php";
 require_once "body.php";
-$names = dbConnect("SELECT name FROM magazine");
+$names = dbConnect("SELECT * FROM magazine");
 while ($row = mysqli_fetch_assoc($names))
 {
     $name[] = $row;
 }
-var_export($name);
+
+
 ?>
 <h3>Электронный дневник</h3>
-<form method="post">
-    <table>
-        <tr><td>Имя</td><td><input type="text" name="name" value=""></td></tr>
-        <tr><td>Фамилия</td><td><input type="text" name="name" value=""></td></tr>
-        <tr><td>Предмет</td><td><input type="text" name="name" value=""></td></tr>
-        <tr><td>Оценка</td><td><input type="text" name="name" value=""></td></tr>
-        <tr><td>Дата</td><td><input type="text" name="name" value=""></td></tr>
-        <tr><td></td><td><input type="submit" value="Найти"></td></tr>
+
+    <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Имя</th>
+            <th scope="col">Фамилия</th>
+            <th scope="col">Предмет</th>
+            <th scope="col">Оценка</th>
+            <th scope="col">Дата</th>
+        </tr>
+
+    </thead>
+    <tbody>
+             <?php
+            foreach ($name as $value)
+            {
+                echo "<tr>";
+                echo "<td>{$value['name']}</td>";
+                echo "<td>{$value['surname']}</td>";
+                echo "<td>{$value['subject']}</td>";
+                echo "<td>{$value['mark']}</td>";
+                echo "<td>{$value['date']}</td>";
+                echo "</tr>";
+            }
+
+
+           ?>
+    </tbody>
+
     </table>
-</form>
+
 <?php
 require_once "footer.php";

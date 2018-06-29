@@ -5,6 +5,7 @@
 function dbConnect($sql)
 {
     $connection = mysqli_connect("localhost","justicerin",12345,"justicerin");
+    mysqli_query($connection,"SET CHARSET utf8");
 
     if ($sql)
     {
